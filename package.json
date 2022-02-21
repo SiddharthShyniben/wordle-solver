@@ -1,0 +1,17 @@
+{
+  "name": "wordle-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculate-matching-words.js",
+  "directories": {
+    "test": "node test/test.js test/**/*.test.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Siddharth Shyniben <siddharth.muscat@gmail.com>",
+  "license": "ISC",
+  "dependencies": {}
+}
