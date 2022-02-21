@@ -14,13 +14,6 @@ const question = question => new Promise(resolve => {
 	cli.question(hl(question), resolve);
 });
 
-const length = +(await question('Enter the length of the words: '));
-
-if (isNaN(length)) {
-	console.error('Length is not valid');
-	process.exit(64);
-}
-
 const guesses = [];
 let matches = words;
 
@@ -28,10 +21,10 @@ console.log(hl('Tip:'), 'salet is a very good starting guess')
 
 const loop = async () => {
 	const word = await question('Guess a word: ');
-	assert.equal(word.length, length);
+	assert.equal(word.length, 5);
 
 	const colors = await question('Enter the colors: ');
-	assert.equal(colors.length, length);
+	assert.equal(colors.length, 5);
 
 	guesses.push({word, colors});
 
